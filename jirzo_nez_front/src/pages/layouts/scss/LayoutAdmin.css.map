@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,eAAe;CAqB9B;;AAnBI,AAAD,qBAAS,CAAA;EACL,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;CACnB;;AAEA,AAAD,sBAAU,CAAA;EACN,UAAU,EAAE,mBAAmB;EAC/B,OAAO,EAAE,mBAAmB;EAC5B,MAAM,EAAE,SAAS;EACjB,UAAU,EAAE,IAAI;CACnB;;AAEA,AAAD,qBAAS,CAAA;EACL,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "LayoutAdmin.scss",
+        "../../scss/index.scss",
+        "../../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "LayoutAdmin.css"
+}

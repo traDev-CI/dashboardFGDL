@@ -1,0 +1,10 @@
+.success {
+  border: 0.5px solid #84b84c !important;
+  background-color: #84b84c1f;
+}
+
+.error {
+  border: 0.5px solid #f00 !important;
+  background-color: #ff00001f;
+}
+/*# sourceMappingURL=App.css.map */

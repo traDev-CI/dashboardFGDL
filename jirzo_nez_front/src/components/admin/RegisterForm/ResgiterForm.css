@@ -1,0 +1,42 @@
+.register-form {
+  text-align: left;
+}
+
+.register-form .ant-form-item:nth-child(3), .register-form .ant-form-item:last-child {
+  margin: 0;
+}
+
+.register-form .ant-input-prefix {
+  font-size: 1.125em;
+}
+
+.register-form input {
+  font-size: 1em;
+  padding: 10px 10px 10px 5px !important;
+}
+
+.register-form input:focus {
+  border-color: #0098d3;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.register-form__button {
+  width: 100%;
+  font-size: 1.125em;
+  background-color: #0098d3;
+  color: #fff;
+  height: 42px;
+}
+
+.register-form__button:hover {
+  background-color: #0280b3;
+  color: #fff;
+}
+
+.register-form__button:focus, .register-form__button:active {
+  background-color: #0098d3;
+  color: #fff;
+  border: 0;
+}
+/*# sourceMappingURL=ResgiterForm.css.map */

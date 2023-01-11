@@ -1,0 +1,72 @@
+.menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.menu-top button {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+}
+
+.menu-top button:hover {
+  color: #0098d3;
+}
+
+.menu-top button:focus, .menu-top button:active {
+  color: #fff;
+}
+
+.menu-top__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-top__left-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-top__left-brand-logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  padding: 2px;
+  border: dashed 1px rgba(255, 255, 255, 0.775);
+}
+
+.menu-top__left-icon {
+  font-size: 16px;
+  color: #000;
+}
+
+.menu-top__right {
+  position: absolute;
+  right: 0;
+}
+
+.menu-top__right-icon {
+  font-size: 16px;
+  color: #000;
+}
+/*# sourceMappingURL=MenuTop.css.map */

@@ -1,0 +1,63 @@
+@import '../../../pages/scss/index.scss';
+
+.menu-top{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+    .ant-drawer-body{
+        background-color: #001529!important;
+    }
+
+    button{
+        background-color: transparent;
+        color: $font-dark;
+        border: 0;
+
+        &:hover{
+            color: $font-grey-dark;
+        }
+        &:focus,
+        &:active{
+            color: $font-grey-dark;
+        }
+    }
+
+    &__left {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        &-brand{
+            display: flex;
+            width: 110px;
+            justify-content: center;
+            align-items: center;
+            &-logo{
+                width: 50px;
+                height: 50px; 
+                background-size: cover;
+                background-position: top center;
+                border-radius: 50%;
+                padding: 2px;
+                border: dashed 1px rgba(255, 255, 255, 0.775)
+            }
+        }
+        &-icon{
+            font-size: 16px;
+            color: #000;
+        }
+
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+
+        &-icon{
+            font-size: 16px;
+            color: #000;
+        }
+    }
+
+
+}

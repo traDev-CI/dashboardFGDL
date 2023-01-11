@@ -1,0 +1,29 @@
+.add-image-form {
+  display: flex;
+  justify-content: space-between;
+}
+.add-image-form .ant-row {
+  justify-content: space-around;
+}
+.add-image-form .form-edit {
+  text-align: center;
+}
+.add-image-form .form-edit .ant-form-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.add-image-form .ant-input-prefix {
+  color: rgba(0, 0, 0, 0.25);
+}
+.add-image-form .btn-submit {
+  width: 100%;
+}
+.add-image-form .new-image img {
+  cursor: pointer;
+}
+.add-image-form .centerImg {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 200px !important;
+}

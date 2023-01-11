@@ -1,0 +1,24 @@
+@import '../../../pages/scss/index.scss';
+
+// .admin-sider{
+//     overflow: auto;
+//     height: 100vh;
+//     position: fixed;
+//     left: 0;
+
+// }
+
+.logo-container {
+    display: flex;
+    height: 100px;
+    margin: 16px;
+    justify-content: center;
+    align-items: center;
+    &__avatar{
+
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    padding: 2px;
+    }
+  }

@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/jirzo_nez_back/node_modules
+/jirzo_nez_front/node_modules
+/jirzo_nez_front/.pnp
+/jirzo_nez_back/pnp.js
+/jirzo_nez_back/.pnp
+/jirzo_nez_front/pnp.js
+
+# testing
+/jirzo_nez_back/coverage
+/jirzo_nez_front/coverage
+
+# production
+/jirzo_nez_back/build
+/jirzo_nez_front/build
+
+# misc
+/jirzo_nez_back/.DS_Store
+/jirzo_nez_back/.env.local
+/jirzo_nez_back/.env.development.local
+/jirzo_nez_back/.env.test.local
+/jirzo_nez_back/.env.production.local
+
+/jirzo_nez_front/.DS_Store
+/jirzo_nez_front/.env.local
+/jirzo_nez_front/.env.development.local
+/jirzo_nez_front/.env.test.local
+/jirzo_nez_front/.env.production.local
+
+/jirzo_nez_front/npm-debug.log*
+/jirzo_nez_front/yarn-debug.log*
+/jirzo_nez_front/yarn-error.log*
+
+/jirzo_nez_back/npm-debug.log*
+/jirzo_nez_back/yarn-debug.log*
+/jirzo_nez_back/yarn-error.log*
