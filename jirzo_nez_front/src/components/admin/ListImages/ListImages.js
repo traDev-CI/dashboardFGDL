@@ -31,6 +31,7 @@ const ListImages = ({ images, setReloadImages }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [title, setTitle] = useState("");
   const [modalContent, setModalContent] = useState(null);
+  const [query, setQuery] = useState('');
 
   const addNewImage = () => {
     setIsVisible(true);
@@ -43,10 +44,12 @@ const ListImages = ({ images, setReloadImages }) => {
     );
   };
 
+  console.log(query);
+
   return (
     <div className="list-image">
       <div className="list-image__header">
-      <Input className="list-image__filter" placeholder="Basic usage" prefix={<SearchOutlined />} />
+      <Input className="list-image__filter" placeholder="Basic usage" prefix={<SearchOutlined />} onChange={(e) => setQuery(e.target.value)} />
         <Tooltip title="Nueva imagen">
           <Button type="primary" shape="circle" onClick={addNewImage}>
             <FileImageOutlined />
@@ -69,7 +72,7 @@ const ListImages = ({ images, setReloadImages }) => {
           },
           pageSize: 6
         }}
-        dataSource={images}
+        dataSource={images.filter(image => image.type.toLowerCase().includes(query))}
         footer={
           <div>
             Fotografos <b>Duadalajara</b>
