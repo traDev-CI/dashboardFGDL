@@ -3,7 +3,7 @@ const app = require("./app");
 const { PORT, PORT_DB, API_VERSION, IP_SERVER } = require("./config");
 
 mongoose.connect(
-  `mongodb://${IP_SERVER}:${PORT_DB}/jirzodbnez`,
+  `mongodb://${IP_SERVER}:${PORT_DB}/jirzonez`,
   { useNewUrlParser: true },
   (err, res) => {
     if (err) {

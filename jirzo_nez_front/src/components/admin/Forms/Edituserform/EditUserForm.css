@@ -1,0 +1,27 @@
+.edit-user-form .upload-avatar {
+  display: table;
+  margin: 0 auto;
+  border: 2px solid #9a9a9a;
+  border-style: dashed;
+  border-radius: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.edit-user-form .form-edit {
+  text-align: center;
+}
+.edit-user-form .form-edit .ant-form-item {
+  margin-top: 5px;
+  margin-top: 5px;
+}
+.edit-user-form .form-edit .ant-form-item i {
+  color: rgba(0, 0, 0, 0.25);
+}
+.edit-user-form .form-edit .ant-select {
+  width: 100%;
+  text-align: left;
+}
+.edit-user-form .form-edit .btn-submit {
+  width: 100%;
+}/*# sourceMappingURL=EditUserForm.css.map */

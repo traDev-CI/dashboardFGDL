@@ -1,0 +1,18 @@
+.list-users__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.list-users__header-switch {
+  display: flex;
+  align-items: center;
+}
+.list-users .users-active {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.list-users .users-active .ant-list-item-meta {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=ListUsers.css.map */

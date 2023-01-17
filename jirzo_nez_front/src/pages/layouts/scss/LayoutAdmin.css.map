@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,eAAe;CAqB9B;;AAnBI,AAAD,qBAAS,CAAA;EACL,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;CACnB;;AAEA,AAAD,sBAAU,CAAA;EACN,UAAU,EAAE,mBAAmB;EAC/B,OAAO,EAAE,mBAAmB;EAC5B,MAAM,EAAE,SAAS;EACjB,UAAU,EAAE,IAAI;CACnB;;AAEA,AAAD,qBAAS,CAAA;EACL,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "LayoutAdmin.scss",
-        "../../scss/index.scss",
-        "../../scss/_variables.scss"
-    ],
-    "names": [],
-    "file": "LayoutAdmin.css"
-}
+{"version":3,"sources":["LayoutAdmin.scss","LayoutAdmin.css"],"names":[],"mappings":"AAEA;EACI,2BAAA;ACDJ;ADGI;EACI,kBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,gBAAA;ACDR;ADII;EACI,+BAAA;EACA,4BAAA;EACA,iBAAA;EACA,gBAAA;ACFR;ADKI;EACI,aAAA;ACHR","file":"LayoutAdmin.css"}

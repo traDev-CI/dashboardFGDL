@@ -1,10 +1,9 @@
 .success {
   border: 0.5px solid #84b84c !important;
-  background-color: #84b84c1f;
+  background-color: rgba(132, 184, 76, 0.1215686275);
 }
 
 .error {
   border: 0.5px solid #f00 !important;
-  background-color: #ff00001f;
-}
-/*# sourceMappingURL=App.css.map */
+  background-color: rgba(255, 0, 0, 0.1215686275);
+}/*# sourceMappingURL=App.css.map */

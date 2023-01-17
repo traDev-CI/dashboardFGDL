@@ -6,12 +6,14 @@ import {
   notification,
   Modal as Confirmation,
   Space,
-  Card
+  Card,
+  Input
 } from "antd";
 import {
   DeleteOutlined,
   EditOutlined,
   FileImageOutlined,
+  SearchOutlined,
   UserAddOutlined
 } from "@ant-design/icons";
 import Modal from "../../Modal";
@@ -44,6 +46,7 @@ const ListImages = ({ images, setReloadImages }) => {
   return (
     <div className="list-image">
       <div className="list-image__header">
+      <Input className="list-image__filter" placeholder="Basic usage" prefix={<SearchOutlined />} />
         <Tooltip title="Nueva imagen">
           <Button type="primary" shape="circle" onClick={addNewImage}>
             <FileImageOutlined />
@@ -57,7 +60,7 @@ const ListImages = ({ images, setReloadImages }) => {
           sm: 2,
           md: 4,
           lg: 4,
-          xl: 6,
+          xl: 3,
           xxl: 4
         }}
         pagination={{

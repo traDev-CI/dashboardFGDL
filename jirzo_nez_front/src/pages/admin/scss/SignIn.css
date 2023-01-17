@@ -4,25 +4,15 @@
   background-position: center center;
   background-size: cover;
 }
-
 .sign-in__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
 }
-
 .sign-in__content-logo {
   padding: 60px 30px;
 }
-
 .sign-in__content-logo img {
   width: 150px;
   height: 150px;
@@ -31,40 +21,29 @@
   border-radius: 50%;
   padding: 2px;
 }
-
 .sign-in__content-tabs {
   background-color: #fff;
 }
-
 .sign-in__content-tabs .ant-tabs {
   width: 50vh;
 }
-
 @media (min-width: 992px) {
   .sign-in__content-tabs .ant-tabs {
     width: auto;
   }
 }
-
 .sign-in__content-tabs .ant-tabs-nac-container {
   height: 60px !important;
 }
-
 .sign-in__content-tabs .ant-tabs-nav {
   width: 100%;
 }
-
 .sign-in__content-tabs .ant-tabs-nav-wrap {
   display: inline-block !important;
 }
-
 .sign-in__content-tabs .ant-tabs-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 50%;
   height: 60px !important;
   text-align: center;
@@ -73,33 +52,24 @@
   border-radius: 0 !important;
   margin: 0 !important;
 }
-
 @media (min-width: 992px) {
   .sign-in__content-tabs .ant-tabs-tab {
     width: 220px;
     font-size: 1.125em;
   }
 }
-
 .sign-in__content-tabs .ant-tabs-tab:hover {
-  color: #a0a0a0;
+  color: rgb(160, 160, 160);
 }
-
 .sign-in__content-tabs .ant-tabs-tab:before {
   content: none;
 }
-
 .sign-in__content-tabs .ant-tabs-tab span {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-items: center;
 }
-
 .sign-in__content-tabs .ant-tabs-tab-active {
   color: #0098d3 !important;
   border-top: 4px solid #0098d3 !important;
@@ -107,9 +77,7 @@
   border-right: 0 !important;
   border-left: 0 !important;
 }
-
 .sign-in__content-tabs .ant-tabs-content {
   padding: 0 16px 16px 16px;
   text-align: center;
-}
-/*# sourceMappingURL=SignIn.css.map */
+}/*# sourceMappingURL=SignIn.css.map */

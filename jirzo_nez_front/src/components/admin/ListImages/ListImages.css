@@ -1,0 +1,9 @@
+.list-image__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.list-image__filter {
+  width: 32.5%;
+}/*# sourceMappingURL=ListImages.css.map */

@@ -52,16 +52,16 @@ const MenuSider = ({ currentLocation }) => {
               <span className="nav-text">Gallery</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="/admin/contact">
-            <Link to={"/admin/contact"}>
-              <ContactsOutlined />
-              <span className="nav-text">Contact</span>
-            </Link>
-          </Menu.Item>
           <Menu.Item key="/admin/users">
             <Link to={"/admin/users"}>
               <UserOutlined />
               <span className="nav-text">Users</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="/admin/contact">
+            <Link to={"/admin/contact"}>
+              <ContactsOutlined />
+              <span className="nav-text">Contact</span>
             </Link>
           </Menu.Item>
           <Menu.Item key="/admin/menu-web">

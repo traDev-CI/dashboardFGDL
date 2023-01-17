@@ -1,8 +1,11 @@
 .list-image{
     &__header{
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+    &__filter{
+        width: 32.5%;
     }
 }
