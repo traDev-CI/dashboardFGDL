@@ -63,14 +63,14 @@ const ListImages = ({ images, setReloadImages }) => {
           sm: 2,
           md: 4,
           lg: 4,
-          xl: 3,
+          xl: 6,
           xxl: 4
         }}
         pagination={{
           onChange: (page) => {
             console.log(page);
           },
-          pageSize: 6
+          pageSize: 8
         }}
         dataSource={images.filter(image => image.type.toLowerCase().includes(query))}
         footer={
