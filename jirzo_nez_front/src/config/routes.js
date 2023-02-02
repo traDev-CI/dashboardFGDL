@@ -12,6 +12,7 @@ import Error404Client from "../pages/Error404Client";
 import Users from "../pages/admin/Users";
 import MenuWeb from "../components/admin/MenuWeb/MenuWeb";
 import Images from "../pages/admin/Images";
+import About from "../pages/admin/About";
 
 const routesAdmin = [
   {
@@ -38,6 +39,11 @@ const routesAdmin = [
     path: "/admin/gallery",
     layout: LayoutAdmin,
     element: Images
+  },
+  {
+    path: "/admin/about",
+    layout: LayoutAdmin,
+    element: About
   },
   {
     path: "/admin/*",

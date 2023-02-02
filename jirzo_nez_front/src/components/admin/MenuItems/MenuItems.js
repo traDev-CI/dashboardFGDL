@@ -32,6 +32,12 @@ const MenuItems = () => {
           <span className="nav-text">Users</span>
         </Link>
       </Menu.Item>
+      <Menu.Item key="/admin/about">
+        <Link to={"/admin/about"}>
+          <ContactsOutlined />
+          <span className="nav-text">About</span>
+        </Link>
+      </Menu.Item>
       <Menu.Item key="/admin/contact">
         <Link to={"/admin/contact"}>
           <ContactsOutlined />

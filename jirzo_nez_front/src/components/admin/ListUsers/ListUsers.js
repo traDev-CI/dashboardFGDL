@@ -45,6 +45,7 @@ const ListUsers = ({ usersActive, usersInactive, setReloadUsers }) => {
 
   return (
     <div className="list-users">
+      
       <div className="list-users__header">
         <div className="list-users__header-switch">
           <Switch
@@ -60,6 +61,7 @@ const ListUsers = ({ usersActive, usersInactive, setReloadUsers }) => {
           </Button>
         </Tooltip>
       </div>
+
       {viewUsersActive ? (
         <UserActive
           usersActive={usersActive}
