@@ -278,9 +278,7 @@ const EditUserForm = ({ user, setIsVisible, setReloadUsers }) => {
     }
   }, [avatar]);
 
-  console.log("====================================");
-  console.log("USERS: ", userData);
-  console.log("====================================");
+ 
 
   return (
     <div className="edit-user-form">

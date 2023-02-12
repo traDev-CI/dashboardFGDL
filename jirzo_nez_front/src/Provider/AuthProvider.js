@@ -27,9 +27,7 @@ const checkUserLogin = (setUser) => {
   const accessToekn = getAccesToken();
   if (!accessToekn) {
     const refreshtoken = getRefreshToken();
-    console.log(refreshtoken);
     if (!refreshtoken) {
-      console.log(refreshtoken);
       logout();
       setUser({ user: null, isLoading: false });
     } else {

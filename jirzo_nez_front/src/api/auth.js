@@ -20,9 +20,6 @@ const getRefreshToken = () => {
 
 const refreshAccessToken = async (refreshToken) => {
   const url = `${BASE_PATH}/${API_VERSION}/refresh-acces-token`;
-  console.log("====================================");
-  console.log(refreshToken);
-  console.log("====================================");
   const bodyObj = {
     refreshToken: refreshToken
   };

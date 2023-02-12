@@ -24,7 +24,7 @@ exports.ensureAuth = function (req, res, next) {
       });
     }
   } catch (error) {
-    //   console.log(error);
+
     return res.status(404).send({
       message: "Invalid token"
     });

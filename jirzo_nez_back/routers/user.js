@@ -24,5 +24,6 @@ api.put(
 );
 api.delete("/delete-user/:id", [md_auth.ensureAuth], userController.deletUser);
 api.post("/sign-up-admin/", [md_auth.ensureAuth], userController.signUpAdmin);
+api.post("/create-user", [md_auth.ensureAuth, md_upload_avatar], userController.createUser);
 
 module.exports = api;

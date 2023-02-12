@@ -13,7 +13,7 @@ const About = () => {
 
   useEffect(() => {
     getAboutInfo(token).then((response) => {
-      setAbout(response);
+      setAbout(response.about);
     })
   },  [token, reloadAbout])
 

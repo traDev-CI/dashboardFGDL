@@ -223,7 +223,6 @@ var updateUser = function updateUser(req, res) {
           userData = req.body;
           userData.email = req.body.email.toLowerCase();
           params = req.params;
-          console.log(userData);
 
           if (!userData.password) {
             _context.next = 9;

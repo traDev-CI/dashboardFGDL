@@ -27,7 +27,6 @@ const AddNewImage = ({ setIsVisible, setReloadImages }) => {
 
   const addImage = (e) => {
     e.preventDefault();
-    console.log(image.file);
 
     if (
       !imageData.photograper ||

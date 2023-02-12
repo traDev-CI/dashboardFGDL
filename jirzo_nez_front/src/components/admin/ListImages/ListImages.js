@@ -44,7 +44,6 @@ const ListImages = ({ images, setReloadImages }) => {
     );
   };
 
-  console.log(query);
 
   return (
     <div className="list-image">
@@ -68,7 +67,6 @@ const ListImages = ({ images, setReloadImages }) => {
         }}
         pagination={{
           onChange: (page) => {
-            console.log(page);
           },
           pageSize: 8
         }}

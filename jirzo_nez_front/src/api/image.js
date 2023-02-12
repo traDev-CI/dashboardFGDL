@@ -72,10 +72,6 @@ const uploadImageApi = async (token, image, imageId) => {
 
 const newDataImageApi = async (token, data) => {
   const url = `${BASE_PATH}/${API_VERSION}/set-data-image`;
-  console.log("====================================");
-  console.log(data);
-  console.log("====================================");
-
   const params = {
     method: "POST",
     headers: {

@@ -3,13 +3,14 @@ const user = require("../models/user");
 const fs = require("fs");
 const path = require("path");
 const User = require("../models/user");
+const imageFile = require("../utils/processImage");
 const jwt = require("../services/jwt");
 
 const signUp = (req, res) => {
   const user = new User();
   const { email, password, repeatPassword, name, lastname } = req.body;
   user.email = email.toLowerCase();
-  user.role = "admin";
+  user.role = "user";
   user.active = false;
   user.name = name;
   user.lastname = lastname;
@@ -44,13 +45,12 @@ const signUp = (req, res) => {
   }
 };
 
-const signIn = (req, res) => {
+const signIn =  (req, res) => {
   const params = req.body;
-  console.log("🚀 ~ file: user.js ~ line 49 ~ signIn ~ params", params);
   const email = params.email.toLowerCase();
   const password = params.password;
 
-  User.findOne({ email }, (err, userStored) => {
+   User.findOne({ email }, (err, userStored) => {
     if (err) {
       res.status(500).send({ message: "Server error" });
     } else {
@@ -64,11 +64,7 @@ const signIn = (req, res) => {
             res.status(404).send({ message: "Password is wrong" });
           } else {
             if (!userStored.active) {
-              console.log(
-                "🚀 ~ file: user.js ~ line 67 ~ bcrypt.compare ~ userStored",
-                userStored
-              );
-              res.status(200).send({ code: 200, message: "User not active" });
+              res.status(401).send({ code: 401, message: "User not active" });
             } else {
               res.status(200).send({
                 accessToken: jwt.createAccessToken(userStored),
@@ -83,8 +79,8 @@ const signIn = (req, res) => {
   });
 };
 
-const getUsers = (req, res) => {
-  user.find().then((users) => {
+const getUsers =  (req, res) => {
+   user.find().then((users) => {
     if (!users) {
       res.status(404).send({ message: "There is no user" });
     } else {
@@ -104,9 +100,9 @@ const getUsersActive = (req, res) => {
   });
 };
 
-const uploadAvatar = (req, res) => {
+const uploadAvatar =  (req, res) => {
   const params = req.params;
-  User.findById({ _id: params.id }, (err, userData) => {
+   User.findById({ _id: params.id }, (err, userData) => {
     if (err) {
       res.status(500).send({ message: "Server error" });
     } else {
@@ -167,7 +163,6 @@ const updateUser = async (req, res) => {
   var userData = req.body;
   userData.email = req.body.email.toLowerCase();
   const params = req.params;
-  console.log(userData);
 
   if (userData.password) {
     await bcrypt.hash(userData.password, 10, (err, hash) => {
@@ -207,10 +202,10 @@ const updateUser = async (req, res) => {
   }
 };
 
-const activateUser = (req, res) => {
+const activateUser =  (req, res) => {
   const { id } = req.params;
   const { active } = req.body;
-  User.findByIdAndUpdate(id, { active }, (err, userStore) => {
+   User.findByIdAndUpdate(id, { active }, (err, userStore) => {
     if (err) {
       res.status(500).send({ message: "Server error" });
     } else {
@@ -227,9 +222,9 @@ const activateUser = (req, res) => {
   });
 };
 
-const deletUser = (req, res) => {
+const deletUser =  (req, res) => {
   const { id } = req.params;
-  User.findByIdAndRemove(id, (err, userDeteled) => {
+   User.findByIdAndRemove(id, (err, userDeteled) => {
     if (err) {
       res.status(500).send({ message: "Server error" });
     } else {
@@ -241,6 +236,47 @@ const deletUser = (req, res) => {
     }
   });
 };
+
+const createUser = (req, res) =>{
+  const user = new User();
+  const { email, password, repeatPassword, name, lastname } = req.body;
+  const { avatar } = req.file;
+  user.email = email.toLowerCase();
+  user.role = "user";
+  user.active = false;
+  user.name = name;
+  user.lastname = lastname;
+
+  if (!password) {
+    res.status(404).send({ message: "The passowrd is required" });
+  } else {
+      bcrypt.genSalt(10, function (err, salt) {
+        bcrypt.hash(password, salt, function (err, hash) {
+          if (err) {
+            res.status(500).send({ message: "Filed to encrypt password" });
+          } else {
+            user.password = hash;
+            if (avatar) {
+              const imageName = imageFile.getFileName(avatar);
+              user.avatar = imageName;
+              user.save((err, userStore) => {
+                if (err) {
+                  res.status(500).send({ message: `This user already exists` });
+                } else {
+                  if (!userStore) {
+                    res.status(400).send({ message: "Error creating user" });
+                  } else {
+                    res.status(200).send({ user: userStore });
+                  }
+                }
+              });
+            }
+          }
+        });
+      });
+  }
+
+}
 
 const signUpAdmin = (req, res) => {
   const user = new User();
@@ -286,5 +322,6 @@ module.exports = {
   updateUser,
   activateUser,
   deletUser,
-  signUpAdmin
+  signUpAdmin,
+  createUser
 };

@@ -170,9 +170,6 @@ var newDataImageApi = function newDataImageApi(token, data) {
       switch (_context5.prev = _context5.next) {
         case 0:
           url = "".concat(_config.BASE_PATH, "/").concat(_config.API_VERSION, "/set-data-image");
-          console.log("====================================");
-          console.log(data);
-          console.log("====================================");
           params = {
             method: "POST",
             headers: {

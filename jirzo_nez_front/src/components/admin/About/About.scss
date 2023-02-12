@@ -3,4 +3,14 @@
         display: flex;
         justify-content: right;
      }
+
+     &__about-section{
+      padding-top: 30px;
+         &__image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+         }
+     }
 }
