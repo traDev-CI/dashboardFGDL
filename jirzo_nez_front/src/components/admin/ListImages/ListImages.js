@@ -14,7 +14,6 @@ import {
   EditOutlined,
   FileImageOutlined,
   SearchOutlined,
-  UserAddOutlined
 } from "@ant-design/icons";
 import Modal from "../../Modal";
 import { getImagesApi, deleteImageApi } from "../../../api/image";

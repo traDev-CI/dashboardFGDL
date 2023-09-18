@@ -1,0 +1,13 @@
+.about-content__header {
+  display: flex;
+  justify-content: right;
+}
+.about-content__about-section {
+  padding-top: 30px;
+}
+.about-content__about-section__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}/*# sourceMappingURL=About.css.map */

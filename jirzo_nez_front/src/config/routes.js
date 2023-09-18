@@ -3,6 +3,7 @@ import LayoutBasic from "../pages/layouts/LayoutBasic";
 import AdminHome from "../pages/admin";
 import SignIn from "../pages/admin/SignIn";
 import Contact from "../pages/Contact";
+import Messages from "../pages/admin/Messages";
 import Editorial from "../pages/Editorial";
 import Fantasy from "../pages/Fantasy";
 import Home from "../pages/Home";
@@ -44,6 +45,11 @@ const routesAdmin = [
     path: "/admin/about",
     layout: LayoutAdmin,
     element: About
+  },
+  {
+    path: "/admin/contact",
+    layout: LayoutAdmin,
+    element: Messages
   },
   {
     path: "/admin/*",

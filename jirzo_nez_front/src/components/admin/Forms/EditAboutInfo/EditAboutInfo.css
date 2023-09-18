@@ -1,0 +1,19 @@
+.edit-info-form .upload-avatar {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.edit-info-form .form-edit {
+  text-align: center;
+}
+.edit-info-form .form-edit .ant-form-item {
+  margin-top: 5px;
+  margin-top: 5px;
+}
+.edit-info-form .form-edit .ant-form-item i {
+  color: rgba(0, 0, 0, 0.25);
+}
+.edit-info-form .form-edit .btn-submit {
+  width: 100%;
+}/*# sourceMappingURL=EditAboutInfo.css.map */

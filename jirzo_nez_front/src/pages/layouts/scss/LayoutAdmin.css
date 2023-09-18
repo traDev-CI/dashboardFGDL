@@ -7,7 +7,6 @@
   display: flex;
   padding: 0;
   height: 90px;
-  background: #fff;
 }
 .layout-admin__content {
   min-height: calc(100vh - 210px);

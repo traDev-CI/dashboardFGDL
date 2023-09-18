@@ -1,0 +1,10 @@
+.add-info-form .form-add .ant-form-item {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.add-info-form .form-add .ant-form-item i {
+  color: rgba(0, 0, 0, 0.25);
+}
+.add-info-form .form-add .btn-submit {
+  width: 100%;
+}/*# sourceMappingURL=AddAboutForm.css.map */

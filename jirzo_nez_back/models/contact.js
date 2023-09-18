@@ -8,6 +8,7 @@ const ContactShema = Schema({
         unique: true,
     },
     message: String,
+    read: Boolean
 })
 
 module.exports = mongoose.model("Contacto", ContactShema);

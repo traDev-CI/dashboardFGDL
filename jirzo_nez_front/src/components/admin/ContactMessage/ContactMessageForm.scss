@@ -1,0 +1,16 @@
+.contact-message-form{
+    .form-edit{
+        text-align: center;
+        .ant-form-item{
+            margin-top: 5px;
+            width: 100%;
+
+            .ant-input-prefix{
+                color: rgba(0, 0, 0, 0.25);
+            }
+        }
+            .btn-submit{
+            width: 100%;
+        }
+    }
+}

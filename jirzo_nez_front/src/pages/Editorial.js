@@ -9,3 +9,6 @@ const Editorial = () => {
 };
 
 export default Editorial;
+
+
+

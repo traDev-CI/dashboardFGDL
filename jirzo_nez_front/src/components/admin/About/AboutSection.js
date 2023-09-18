@@ -48,18 +48,6 @@ const AboutSection = ({about, setReloadAbout}) => {
     })
   })
 
-
-  // const addAbout = () =>{
-  //   setIsVisible(true);
-  //   setTitle("Agregar nueva informacion a la seccion 'Acerca de nosotros'")
-  //   setModalContent(
-  //     <AddAboutForm
-  //       setVisible={setIsVisible}
-  //       setReloadAbout={setReloadAbout}
-  //     />
-  //   )
-  // }
-
   const editInfoAbout = (info) =>{
     setIsVisible(true);
     setTitle("Edit informacion")
