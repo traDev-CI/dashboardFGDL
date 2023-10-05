@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Form, Input, Select, Button, Row, Col, notification } from "antd";
+import { Form, Input, Button, Row, Col, notification } from "antd";
 import { LockOutlined, MailOutlined, UserOutlined } from "@ant-design/icons";
 
 import { getAccesToken } from "../../../../api/auth";

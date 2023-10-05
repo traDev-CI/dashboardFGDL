@@ -1,27 +1,18 @@
+/* eslint-disable array-callback-return */
 import React, { useEffect, useState } from "react";
 import {
-  List,
-  Switch,
-  Avatar,
   Button,
   Tooltip,
-  notification,
   Image,
   Col,
   Row,
-  Modal as Confirmation
 } from "antd";
 import {
-  CheckOutlined,
-  DeleteOutlined,
   EditOutlined,
-  StopOutlined,
-  UserAddOutlined
 } from "@ant-design/icons";
 import Modal from "../../Modal";
 
 import "./About.scss"
-import AddAboutForm from "./AddAboutForm/AddAboutForm";
 import EditAboutInfo from "../Forms/EditAboutInfo";
 import { getMiniatureApi } from "../../../api/about";
 

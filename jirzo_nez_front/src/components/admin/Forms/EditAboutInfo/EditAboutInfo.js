@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useCallback, useEffect, useState } from "react";
 import {
   Avatar,
@@ -191,7 +192,7 @@ const EditAboutInfo = ({info, setIsVisible, setReloadAbout}) => {
         if (miniature) {
             setInfoData({ ...infoData, miniature: miniature.file })
         }
-    }, [miniature]);
+    }, [infoData, miniature]);
 
   return (
     <div className="edit-info-form">

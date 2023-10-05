@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Tabs } from "antd";
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import logoAdmin from "../../assets/img/logoAdmin.jpg";
 import RegisterForm from "../../components/admin/RegisterForm";
 import LoginForm from "../../components/admin/LogInform/LoginForm";

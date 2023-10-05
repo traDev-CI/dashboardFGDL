@@ -1,0 +1,10 @@
+.menu-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.menu-page__header-switch {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=Menu.css.map */
